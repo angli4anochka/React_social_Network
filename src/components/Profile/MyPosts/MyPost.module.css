@@ -1,0 +1,12 @@
+.main-content{
+  grid-area: main;
+  background-color: yellow;
+}
+
+.postBlock {
+  padding: 10px;
+}
+
+.posts {
+  margin-top: 10px;
+}

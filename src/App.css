@@ -10,22 +10,12 @@
  /* grid-gap: 10px; */
 }
 
-.header {
-  grid-area: header;
-  background-color: green;
-}
+.app-wrapper-content {
+    grid-area: main;
+    background-color: rgb(253, 253, 253);
+  }
+  
 
-.header img {
-  width: 70px;
-  height: 60px;
-}
 
-.nav {
-  grid-area: nav;
-  background-color: aqua;
-}
 
-.main-content{
-  grid-area: main;
-  background-color: yellow;
-}
+
