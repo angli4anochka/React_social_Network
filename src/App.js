@@ -3,9 +3,10 @@ import './App.css';
 import Dialogs from './components/Dialogs/Dialogs';
 import Header from './components/Header/Header';
 import Navbar from './components/Navbar/Navbar';
+import Friends from'./components/Friends/Friends';
 import Profile from './components/Profile/Profile';
 
-
+console.log()
 
 const App = (props) => {
   return (
@@ -16,10 +17,10 @@ const App = (props) => {
       <div className = 'app-wrapper-content'>
     
       <Routes>
-      <Route exact path="/Dialogs" element={<Dialogs dialog={props.dialogsData}  messages ={props.msg} />}/>
-      <Route exact path="/Profile" element={<Profile posts = {props.posts} />} />
+      <Route exact path="/Dialogs" element={<Dialogs state={props.state.messagesPage} />}/>
+      <Route exact path="/Profile" element={<Profile state = {props.state.profilePage} />} />
+      <Route exact path="/Friends" element={<Friends state = {props.state.friends} />} />
     </Routes>
-    
       </div>
     </div>
     </Router>

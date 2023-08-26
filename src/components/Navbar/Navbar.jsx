@@ -11,7 +11,9 @@ return (
     </div>
     <div className={classes.item}>
       <NavLink to="/Dialogs">Messages</NavLink></div>
-    </nav>
+    <div className={classes.item}>
+    <NavLink to="/Friends">Friends</NavLink></div>
+  </nav>
    
 )
   }
